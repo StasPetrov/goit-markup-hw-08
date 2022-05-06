@@ -1,0 +1,29 @@
+.project-list {
+  display: flex;
+}
+
+.project-list__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.project-list__item-wrapper {
+  position: relative;
+}
+
+.project-list__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  width: 100%;
+  height: 70px;
+  text-transform: uppercase;
+}
