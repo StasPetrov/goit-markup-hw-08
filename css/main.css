@@ -267,9 +267,15 @@ img {
     left: 0;
     cursor: default;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1199.9px) {
   .contact-header__item:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+@media screen and (min-width: 768px) {
   .contact-header__link {
     display: flex;
     align-items: center;
