@@ -397,7 +397,7 @@ img {
   margin: 0 auto;
   padding: 118px 0;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile-header.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-header.jpg");
   background-color: #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
@@ -417,7 +417,7 @@ img {
 @media screen and (min-width: 768px) {
   .banner {
     max-width: 1199px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet-banner.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-banner.jpg");
   }
   .banner__title {
     width: 360px;
