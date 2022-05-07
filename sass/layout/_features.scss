@@ -9,13 +9,9 @@
     background-color: #f5f4fa;
     border-radius: 4px;
   }
-
-  .features-list__item {
-    width: 450px;
-    
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .features-list {
