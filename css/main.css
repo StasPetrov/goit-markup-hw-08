@@ -404,6 +404,12 @@ img {
   background-position: center;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-header@2x.jpg");
+  }
+}
+
 .banner__title {
   margin: 0 auto 30px;
   color: var(--primary-white-color);
@@ -424,6 +430,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-banner@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .banner {
     max-width: 1600px;
@@ -434,6 +446,12 @@ img {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background@2x.jpg");
   }
 }
 
