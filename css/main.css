@@ -595,21 +595,16 @@ img {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+}
+
+.team-list__wrapper {
+  padding: 30px 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-list__item {
   background-color: var(--primary-white-color);
-}
-
-.team-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.team-list__wrapper {
-  padding: 30px 122px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
 }
 
 .team-list__title {
@@ -628,6 +623,36 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .team-list {
+    flex-wrap: wrap;
+  }
+  .team-list__wrapper {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team-list__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .team-list__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
 }
 
 .clients-list {
@@ -963,39 +988,39 @@ img {
   background-color: #188ce8;
 }
 
+.section {
+  padding: 94px 0;
+}
+
+.section--padding--zero {
+  padding-top: 0;
+}
+
+.section--background--white {
+  background-color: #f5f4fa;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 @media screen and (max-width: 1199.98px) {
   .section {
     padding: 60px 0;
   }
   .section__title {
     margin-bottom: 30px;
-    font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
   }
   .section.section--padding--zero {
     display: none;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding: 94px 0;
-  }
-  .section__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.17;
-  }
-  .section--padding--zero {
-    padding-top: 0;
-  }
-}
-
-.section--background--white {
-  background-color: #f5f4fa;
 }
 
 .social-list {
