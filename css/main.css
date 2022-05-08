@@ -413,6 +413,7 @@ img {
 .banner__title {
   margin: 0 auto 30px;
   color: var(--primary-white-color);
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -423,9 +424,6 @@ img {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-banner.jpg");
-  }
-  .banner__title {
-    width: 360px;
   }
 }
 
@@ -441,7 +439,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
   }
   .banner__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
