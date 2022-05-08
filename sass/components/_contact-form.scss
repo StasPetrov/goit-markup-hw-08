@@ -1,10 +1,18 @@
 .contact-form-text {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .contact-form-text {
+    line-height: 1.15;
+  }
+  
 }
 
 .contact-form-field {
@@ -54,7 +62,7 @@
 
   .contact-form-input:focus+& {
     fill: var(--primary-blue-color);
-  
+
   }
 }
 
@@ -96,8 +104,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-sonic-color);
 
@@ -114,7 +122,7 @@
     .contact-form-checkbox:focus+& {
       outline: 1px solid var(--primary-blue-color);
     }
-    
+
     .contact-form-checkbox:checked+& {
       background-image: url('../images/chek-icon.svg');
       background-color: var(--primary-blue-color);
@@ -126,7 +134,150 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+
+  .contact-form-checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+}
+
 .policy-link {
   color: var(--primary-blue-color);
   text-decoration-line: underline;
 }
+
+
+// .contact-form-text {
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 1.15;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   margin-bottom: 12px;
+// }
+
+// .contact-form-field {
+//   display: block;
+//   margin-bottom: 10px;
+// }
+
+// .contact-form-title {
+//   display: block;
+//   font-size: 12px;
+//   line-height: 1.17;
+//   letter-spacing: 0.01em;
+//   color: var(--primary-sonic-color);
+//   margin-bottom: 4px;
+// }
+
+// .contact-form-input-wrapper {
+//   position: relative;
+//   display: block;
+
+// }
+
+// .contact-form-input {
+//   width: 100%;
+//   height: 40px;
+//   padding-left: 42px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   transition-property: border-color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:focus {
+//     outline: none;
+//     border-color: var(--primary-blue-color);
+//   }
+// }
+
+// .contact-form-icon {
+//   position: absolute;
+//   top: 50%;
+//   left: 12px;
+//   transform: translateY(-50%);
+//   transition-property: fill;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   .contact-form-input:focus+& {
+//     fill: var(--primary-blue-color);
+  
+//   }
+// }
+
+// .contact-form-comments {
+//   display: block;
+//   margin-bottom: 20px;
+// }
+
+// .contact-form-message {
+//   display: block;
+//   width: 100%;
+//   height: 120px;
+//   resize: none;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   padding: 12px 16px;
+//   transition-property: border-color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:focus {
+//     outline: none;
+//     border-color: var(--primary-blue-color);
+//   }
+
+//   &::placeholder {
+//     color: rgba(117, 117, 117, 0.5);
+//     font-size: 12px;
+//     line-height: 1.17;
+//     letter-spacing: 0.01em;
+//   }
+// }
+
+// .contact-form-checkbox-wrapper {
+//   margin-bottom: 30px;
+// }
+
+// .contact-form-checkbox-label {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   color: var(--primary-sonic-color);
+
+//   &::before {
+//     display: inline-block;
+//     content: "";
+//     width: 16px;
+//     height: 15px;
+//     border: 2px solid var(--primary-black-color);
+//     border-radius: 2px;
+//     cursor: pointer;
+//     margin-right: 7px;
+
+//     .contact-form-checkbox:focus+& {
+//       outline: 1px solid var(--primary-blue-color);
+//     }
+    
+//     .contact-form-checkbox:checked+& {
+//       background-image: url('../images/chek-icon.svg');
+//       background-color: var(--primary-blue-color);
+//       border-radius: 2px;
+//       border-color: var(--primary-blue-color);
+//       background-repeat: no-repeat;
+//       background-position: center;
+//     }
+//   }
+// }
+
+// .policy-link {
+//   color: var(--primary-blue-color);
+//   text-decoration-line: underline;
+// }

@@ -4,8 +4,37 @@
 
 .portfolio-buttons-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767.98px) {
+  
+  .portfolio-item {
+    margin-top: 15px;
+  }
+
+  .portfolio-buttons-list {
+    flex-wrap: wrap;
+    margin-top: -15px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+
+  .portfolio-buttons-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+  .portfolio-buttons-list {
+    margin-bottom: 50px;
+  }
+  
 }
 
 .portfolio-buttons {
@@ -37,6 +66,7 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-card-link {
@@ -83,16 +113,28 @@
 }
 
 .portfolio-card-container {
-  padding: 20px 24px;
+  padding: 20px 18px;
   border: 1px solid #eeeeee;
 }
 
-.portfolio-card:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (max-width: 1199.98px) {
+
+  .portfolio-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
 }
 
-.portfolio-card:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+// .portfolio-card:not(:nth-child(3n)) {
+//   margin-right: 30px;
+// }
+
+@media screen and (min-width: 1200px) {
+  
+  .portfolio-card:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+
 }
 
 .portfolio-card-title {
