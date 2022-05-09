@@ -1280,6 +1280,8 @@ img {
 
 .contact-form-checkbox-wrapper {
   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-form-checkbox-label {
