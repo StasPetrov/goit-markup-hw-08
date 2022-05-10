@@ -3,7 +3,7 @@
   padding: 60px 0;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   
   .site-footer {
     text-align: center;
@@ -28,6 +28,13 @@
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  
+  .address-container {
+    margin-bottom: 60px;
+  }
+
+}
 
 @media screen and (min-width: 1200px) {
   
@@ -39,13 +46,6 @@
 
 .address {
   margin-top: 20px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .address {
-    margin-bottom: 60px;
-  }
-  
 }
 
 .contact-footer__item:not(:last-child) {
@@ -112,14 +112,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-
-  .footer-social__text {
-    text-align: center;
-  }
-  
 }
 
 .footer-social-list {
